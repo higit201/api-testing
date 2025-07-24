@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "1997a78a-b65e-4e77-b890-2112d193e1d9",
+		"name": "api test collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37351622"
+	},
+	"item": [
+		{
+			"name": "https://script.google.com/macros/s/AKfycbxLzEEQq_Otj34W3BzQUQnHMU1cij_MDzxs_q4WTamAt7poc8xuvJ8RM019rMEjK4syUw/exec",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Removed the unnecessary object notation\r",
+							"pm.test(\"Response body has valid data\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"harshita\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"sick\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"12:00\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"11:00\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"2222-11-23\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"completed\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"good\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"yes\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"yes\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"yes\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Name\": \"harshita\",\r\n  \"Leave\": \"sick\",\r\n  \"Login Time\": \"12:00\",\r\n  \"Logout Time\": \"11:00\",\r\n  \"Date\": \"2222-11-23\",\r\n  \"Target\": \"completed\",\r\n  \"Track Record\": \"good\",\r\n  \"IVR Calling\": \"yes\",\r\n  \"Call Record\": \"yes\",\r\n  \"Whatsapp Messenger\": \"yes\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://script.google.com/macros/s/AKfycbxLzEEQq_Otj34W3BzQUQnHMU1cij_MDzxs_q4WTamAt7poc8xuvJ8RM019rMEjK4syUw/exec",
+					"protocol": "https",
+					"host": [
+						"script",
+						"google",
+						"com"
+					],
+					"path": [
+						"macros",
+						"s",
+						"AKfycbxLzEEQq_Otj34W3BzQUQnHMU1cij_MDzxs_q4WTamAt7poc8xuvJ8RM019rMEjK4syUw",
+						"exec"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://script.google.com/macros/s/AKfycbxLzEEQq_Otj34W3BzQUQnHMU1cij_MDzxs_q4WTamAt7poc8xuvJ8RM019rMEjK4syUw/exec",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Name\": \"harshita\",\r\n  \"Leave\": \"sick\",\r\n  \"Login Time\": \"12:00\",\r\n  \"Logout Time\": \"11:00\",\r\n  \"Date\": \"2222-11-23\",\r\n  \"Target\": \"completed\",\r\n  \"Track Record\": \"good\",\r\n  \"IVR Calling\": \"yes\",\r\n  \"Call Record\": \"yes\",\r\n  \"Whatsapp Messenger\": \"yes\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://script.google.com/macros/s/AKfycbxLzEEQq_Otj34W3BzQUQnHMU1cij_MDzxs_q4WTamAt7poc8xuvJ8RM019rMEjK4syUw/exec",
+							"protocol": "https",
+							"host": [
+								"script",
+								"google",
+								"com"
+							],
+							"path": [
+								"macros",
+								"s",
+								"AKfycbxLzEEQq_Otj34W3BzQUQnHMU1cij_MDzxs_q4WTamAt7poc8xuvJ8RM019rMEjK4syUw",
+								"exec"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "Mon, 01 Jan 1990 00:00:00 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 31 Jul 2024 11:41:33 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "origin"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Server",
+							"value": "GSE"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta name=\"description\" content=\"Web word processing, presentations and spreadsheets\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0\">\n        <link rel=\"shortcut icon\" href=\"//docs.google.com/favicon.ico\">\n        <title>Page Not Found</title>\n        <meta name=\"referrer\" content=\"origin\">\n        <link href=\"//fonts.googleapis.com/css?family=Product+Sans\" rel=\"stylesheet\" type=\"text/css\" nonce=\"t56Z0jUO7BiraXd98bnx7g\">\n        <style nonce=\"t56Z0jUO7BiraXd98bnx7g\">.goog-inline-block{position:relative;display:-moz-inline-box;display:inline-block}* html .goog-inline-block{display:inline}*:first-child+html .goog-inline-block{display:inline}#drive-logo{margin:18px 0;position:absolute;white-space:nowrap}.docs-drivelogo-img{background-image:url(//ssl.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_116x41dp.png);-webkit-background-size:116px 41px;background-size:116px 41px;display:inline-block;height:41px;vertical-align:bottom;width:116px}.docs-drivelogo-text{color:#000;display:inline-block;opacity:.54;text-decoration:none;font-family:\"Product Sans\",Arial,Helvetica,sans-serif;font-size:32px;text-rendering:optimizeLegibility;position:relative;top:-6px;left:-7px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}@media (-webkit-min-device-pixel-ratio:1.5),(min-resolution:144dpi){.docs-drivelogo-img{background-image:url(//ssl.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_116x41dp.png)}}sentinel{}</style>\n        <style type=\"text/css\" nonce=\"t56Z0jUO7BiraXd98bnx7g\">body {background-color: #fff; font-family: Arial,sans-serif; font-size: 13px; margin: 0; padding: 0;}a, a:link, a:visited {color: #112ABB;}</style>\n        <style type=\"text/css\" nonce=\"t56Z0jUO7BiraXd98bnx7g\">.errorMessage {font-size: 12pt; font-weight: bold; line-height: 150%;}</style>\n    </head>\n    <body>\n        <div id=\"outerContainer\">\n            <div id=\"innerContainer\">\n                <div style=\"position: absolute; top: -80px;\">\n                    <div id=\"drive-logo\">\n                        <a href=\"/\">\n                            <span class=\"docs-drivelogo-img\" title=\"Google logo\"></span>\n                            <span class=\"docs-drivelogo-text\">&nbsp;Drive</span>\n                        </a>\n                    </div>\n                </div>\n                <div align=\"center\">\n                    <p class=\"errorMessage\" style=\"padding-top: 50px\">Sorry, unable to open the file at this time.</p>\n                    <p> Please check the address and try again. </p>\n                    <div style=\"background: #F0F6FF; border: 1px solid black; margin-top: 35px; padding: 10px 125px; width: 300px;\">\n                        <p>\n                            <strong>Get stuff done with Google Drive</strong>\n                        </p>\n                        <p>Apps in Google Drive make it easy to create, store and share online documents, spreadsheets, presentations and more.</p>\n                        <p>Learn more at \n                            <a href=\"https://drive.google.com/start/apps\">drive.google.com/start/apps</a>.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </body>\n    <style nonce=\"t56Z0jUO7BiraXd98bnx7g\">html {height: 100%; overflow: auto;}body {height: 100%; overflow: auto;}#outerContainer {margin: auto; max-width: 750px;}#innerContainer {margin-bottom: 20px; margin-left: 40px; margin-right: 40px; margin-top: 80px; position: relative;}</style>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "Get All Posts",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response should be a JSON array\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.be.an('array');\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Post by ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response has ID = 1\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.id).to.eql(1);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/1",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Post",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response has ID\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"id\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 201\", function () {\r",
+							"  pm.response.to.have.status(201);\r",
+							"});\r",
+							"var template = `\r",
+							"<style type=\"text/css\">\r",
+							"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r",
+							"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r",
+							"    .tftable tr {background-color:#ffffff;}\r",
+							"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r",
+							"    .tftable tr:hover {background-color:#e0ffff;}\r",
+							"</style>\r",
+							"\r",
+							"<table class=\"tftable\" border=\"1\">\r",
+							"    <tr>\r",
+							"        <th>ID</th>\r",
+							"        <th>Title</th>\r",
+							"        <th>Body</th>\r",
+							"        <th>User ID</th>\r",
+							"    </tr>\r",
+							"    \r",
+							"    <tr>\r",
+							"        <td>{{response.id}}</td>\r",
+							"        <td>{{response.title}}</td>\r",
+							"        <td>{{response.body}}</td>\r",
+							"        <td>{{response.userId}}</td>\r",
+							"    </tr>\r",
+							"</table>\r",
+							"`;\r",
+							"\r",
+							"function constructVisualizerPayload() {\r",
+							"    return { response: pm.response.json() };\r",
+							"}\r",
+							"\r",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"foo\",\r\n  \"body\": \"bar\",\r\n  \"userId\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
